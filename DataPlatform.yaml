@@ -1,0 +1,34 @@
+spring:
+	profiles:
+		active: dev
+	environment: dev
+server:
+	port: 9000
+---
+spring:
+        profiles:
+                active: sit
+        environment: sit
+server:
+	port: 9001
+---
+spring:
+        profiles:
+                active: hotfix
+        environment: hotfix
+server: 
+	port: 9003
+---
+spring:
+        profiles:
+                active: demo
+        environment: demo
+server: 
+	port 9004
+---
+spring:
+        profiles:
+                active: prod
+        environment: prod
+server:
+	port: 9000
